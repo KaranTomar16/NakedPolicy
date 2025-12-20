@@ -7,32 +7,88 @@ export default function NakedPolicyApp() {
     const [summary, setSummary] = useState(null);
     const [isProcessing, setIsProcessing] = useState(false);
 
-    const handleFileUpload = (event) => {
+    const handleFileUpload = async (event) => {
         const file = event.target.files[0];
-        if (file) {
-            setUploadedFile(file);
-            setIsProcessing(true);
+        if (!file) return;
 
-            // Simulate processing
-            setTimeout(() => {
-                setSummary({
-                    title: file.name,
-                    keyPoints: [
-                        "Data Collection: The service collects personal information including name, email, and usage data",
-                        "Third-Party Sharing: Your data may be shared with analytics providers and marketing partners",
-                        "Retention Period: Personal data is retained for 2 years after account closure",
-                        "User Rights: You have the right to access, modify, or delete your personal data",
-                        "Cookies: The service uses both essential and non-essential cookies for functionality and analytics",
-                        "Security Measures: Industry-standard encryption (TLS 1.3) is used to protect data in transit",
-                        "Age Restrictions: Users must be 16 years or older to use this service",
-                        "Policy Updates: Users will be notified via email of any material changes to the policy",
-                        "Liability Limits: The service limits liability to the amount paid in the last 12 months",
-                        "Dispute Resolution: Disputes must be resolved through binding arbitration"
-                    ],
-                    risk: 'medium'
-                });
-                setIsProcessing(false);
-            }, 2000);
+        setUploadedFile(file);
+        setIsProcessing(true);
+
+        try {
+            // Read file content
+            const text = await file.text();
+            
+            // Send to backend API
+            const response = await fetch('http://localhost:5000/summarize', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ text: text })
+            });
+
+            if (!response.ok) {
+                throw new Error(`API Error: ${response.status}`);
+            }
+
+            const data = await response.json();
+            
+            // Parse the summary text into sections
+            const summaryText = data.summary;
+            
+            // Extract sections from the markdown-formatted summary
+            const sections = {
+                critical: [],
+                concerning: [],
+                good: [],
+                standard: []
+            };
+
+            // Simple parsing - split by emoji markers
+            const lines = summaryText.split('\n').filter(line => line.trim());
+            
+            lines.forEach(line => {
+                if (line.includes('🚫')) {
+                    sections.critical.push(line.replace('🚫', '').trim());
+                } else if (line.includes('⚠️')) {
+                    sections.concerning.push(line.replace('⚠️', '').trim());
+                } else if (line.includes('✅')) {
+                    sections.good.push(line.replace('✅', '').trim());
+                } else if (line.includes('ℹ️')) {
+                    sections.standard.push(line.replace('ℹ️', '').trim());
+                }
+            });
+
+            // Combine all points for display
+            const allPoints = [
+                ...sections.critical.map(p => `🚫 ${p}`),
+                ...sections.concerning.map(p => `⚠️ ${p}`),
+                ...sections.good.map(p => `✅ ${p}`),
+                ...sections.standard.map(p => `ℹ️ ${p}`)
+            ];
+
+            // Determine risk level based on critical and concerning items
+            let risk = 'low';
+            if (sections.critical.length > 2) {
+                risk = 'high';
+            } else if (sections.critical.length > 0 || sections.concerning.length > 3) {
+                risk = 'medium';
+            }
+
+            setSummary({
+                title: file.name,
+                fullText: summaryText,
+                keyPoints: allPoints.length > 0 ? allPoints : ['Summary generated successfully. View full text below.'],
+                risk: risk,
+                sections: sections
+            });
+
+        } catch (error) {
+            console.error('Error processing file:', error);
+            alert(`Error: ${error.message}\n\nMake sure the backend server is running on http://localhost:5000`);
+            setUploadedFile(null);
+        } finally {
+            setIsProcessing(false);
         }
     };
 
