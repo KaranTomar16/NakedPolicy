@@ -1,0 +1,82 @@
+{
+  "b2ce1891-5b7d-4aa6-9ef9-0e65eec1fb86": {
+    "id": "b2ce1891-5b7d-4aa6-9ef9-0e65eec1fb86",
+    "url": "github.com",
+    "short_summary": "⚠️ Unable to generate summary. Please try again later.",
+    "full_summary": "# Summary Generation Failed\n\nUnable to generate AI summary at this time.\n\n**Possible reasons:**\n- API quota exceeded (wait a few minutes)\n- Model unavailable\n- Network issues\n- Invalid API key\n\n**What you can do:**\n1. Wait a minute and try again\n2. Check your API key and quota\n3. Try uploading a smaller policy file\n\nVisit: https://www.perplexity.ai/settings/api to check your API usage\n",
+    "policy_types": [
+      "privacy",
+      "terms",
+      "cookies",
+      "code_of_conduct"
+    ],
+    "timestamp": "2025-12-21T06:47:36.759953",
+    "created_at": "2025-12-21 06:47:36"
+  },
+  "bc082104-4ff9-4ed7-9a45-386178e984f5": {
+    "id": "bc082104-4ff9-4ed7-9a45-386178e984f5",
+    "url": "www.pluralsight.com",
+    "short_summary": "⚠️ Unable to generate summary. Please try again later.",
+    "full_summary": "# Summary Generation Failed\n\nUnable to generate AI summary at this time.\n\n**Possible reasons:**\n- API quota exceeded (wait a few minutes)\n- Model unavailable\n- Network issues\n- Invalid API key\n\n**What you can do:**\n1. Wait a minute and try again\n2. Check your API key and quota\n3. Try uploading a smaller policy file\n\nVisit: https://www.perplexity.ai/settings/api to check your API usage\n",
+    "policy_types": [
+      "privacy",
+      "terms",
+      "code_of_conduct"
+    ],
+    "timestamp": "2025-12-21T07:25:07.706818",
+    "created_at": "2025-12-21 07:25:07"
+  },
+  "d17881d8-3fe2-471b-86dc-dc709167f110": {
+    "id": "d17881d8-3fe2-471b-86dc-dc709167f110",
+    "url": "www.pluralsight.com",
+    "short_summary": "⚠️ Unable to generate summary. Please try again later.",
+    "full_summary": "# Summary Generation Failed\n\nUnable to generate AI summary at this time.\n\n**Possible reasons:**\n- API quota exceeded (wait a few minutes)\n- Model unavailable\n- Network issues\n- Invalid API key\n\n**What you can do:**\n1. Wait a minute and try again\n2. Check your API key and quota\n3. Try uploading a smaller policy file\n\nVisit: https://www.perplexity.ai/settings/api to check your API usage\n",
+    "policy_types": [
+      "privacy",
+      "terms",
+      "code_of_conduct"
+    ],
+    "timestamp": "2025-12-21T07:30:37.442945",
+    "created_at": "2025-12-21 07:30:37"
+  },
+  "a746c0e9-2968-4cbf-bdd1-4205ed1816a4": {
+    "id": "a746c0e9-2968-4cbf-bdd1-4205ed1816a4",
+    "url": "www.pluralsight.com",
+    "short_summary": "🚫 Pluralsight shares personal data with subprocessors/third parties on instructions; international transfers (EU-US Framework). ⚠️ Uses cookies; AI processes user content; limited user deletion rights. Data encrypted, least-privilege access.[1][2][7][9] (38 words)",
+    "full_summary": "# What You Need to Know\n\n## 🚫 CRITICAL ISSUES (Deal Breakers)\n🚫 If your boss pays for your account with a work email, they own all your learning data like course history and scores - you lose access if they cut you off  \n🚫 They record and store your support calls for 6 months, listening to everything you say  \n🚫 Using a work email lets your employer take full control of your account and see everything in it  \n\n## ⚠️ CONCERNING PRACTICES (Think Twice)\n⚠️ They track every click, course view, scroll, and device detail automatically when you use the site  \n⚠️ Your data gets shared with partners, affiliates, tech vendors, and even Facebook for ads and analytics  \n⚠️ Data moves to the US from anywhere (like Europe) and they use legal tricks to make it \"safe\"  \n⚠️ AI features can make up fake info or risky advice - don't trust it for real work  \n⚠️ They keep your data forever after you quit, for lawsuits or complaints  \n⚠️ Cookies follow you around other sites for targeted ads unless you opt out  \n\n## ✅ GOOD THINGS (Your Rights)\n✅ You can delete all your personal data anytime through account settings - it's gone for good  \n✅ Opt out of marketing emails and some ad tracking via your profile or unsubscribe link  \n✅ EU/UK users get full GDPR rights like seeing, fixing, or erasing your data  \n✅ California users have CCPA rights to know and control data sales  \n✅ They encrypt payments and call recordings, with limited staff access  \n\n## ℹ️ STANDARD STUFF (Normal for Most Services)\nℹ️ Need name and email to sign up; payment info for subscriptions  \nℹ️ They send service updates and can't be opted out of those  \nℹ️ Cookies run the site - disable them and features break  \nℹ️ Third-party payment processors handle your card details, not them  \nℹ️ They use your data to suggest courses and improve the site",
+    "policy_types": [
+      "privacy",
+      "terms",
+      "code_of_conduct"
+    ],
+    "timestamp": "2025-12-21T07:35:41.037595",
+    "created_at": "2025-12-21 07:35:41"
+  },
+  "06f9eff8-52c9-460b-a756-118df0c3c02b": {
+    "id": "06f9eff8-52c9-460b-a756-118df0c3c02b",
+    "url": "openai.com",
+    "short_summary": "🚫 OpenAI collects **prompts, files, IP, device data**; shares with affiliates/sub-processors. ⚠️ May retain 30 days for safety/abuse; uses de-identified data for improvements. No training on business data unless opted in. Users have access/delete rights.[2][1][5] (38 words)",
+    "full_summary": "# What You Need to Know\n\n## 🚫 CRITICAL ISSUES (Deal Breakers)\n🚫 They keep your chats, prompts, files, images, and audio to train their AI unless you opt out.\n🚫 A court order forces them to save all ChatGPT conversations forever, even deleted or temporary ones from April-September 2025[1][2].\n🚫 Bosses in business accounts can read your private chats and control your account.\n🚫 They track your IP address, device info, location, and exact usage to watch for \"fraud\" or improve their stuff.\n🚫 If the company sells or goes bankrupt, your data goes to the new owners.\n\n## ⚠️ CONCERNING PRACTICES (Think Twice)\n⚠️ They share your data with vendors, affiliates, and government if law says so or to fight \"abuse.\"\n⚠️ Your \"deleted\" temporary chats stick around 30 days for safety checks.\n⚠️ AI outputs can lie about you or facts, and fixing model errors is hard.\n⚠️ No jury trials—disputes go to private arbitration in California, no class actions.\n⚠️ Under 13 banned; under 18 needs parent okay, but they don't check age well.\n\n## ✅ GOOD THINGS (Your Rights)\n✅ You own your inputs and outputs, and they assign any rights to you.\n✅ Opt out of them using your content for AI training via settings.\n✅ Ask to see, delete, fix, or download your data at privacy.openai.com or dsar@openai.com.\n✅ They don't sell your data or use it for targeted ads.\n✅ Cancel paid account anytime, no refunds unless law requires.\n\n## ℹ️ STANDARD STUFF (Normal for Most Services)\nℹ️ Cookies track your browsing to run the site and remember logins.\nℹ️ Must be 13+ to sign up with real info; no sharing accounts.\nℹ️ They use data to fight spam, fix bugs, and send updates.\nℹ️ Security measures in place, but no online service is 100% hack-proof.\nℹ️ Policy can change with 30 days notice for big stuff.",
+    "policy_types": [
+      "privacy",
+      "terms",
+      "cookies"
+    ],
+    "timestamp": "2025-12-21T11:33:23.315597",
+    "created_at": "2025-12-21 11:33:23"
+  },
+  "a05117f3-1739-4ded-b6d2-836e182f1cf3": {
+    "id": "a05117f3-1739-4ded-b6d2-836e182f1cf3",
+    "url": "github.com",
+    "short_summary": "🚫 GitHub collects extensive personal and usage data (account, content, device, cookies, payment) and may share with third parties, subprocessors, affiliates, and law enforcement when required.⚠️ Data is used for service, security, analytics, and AI training; you can access, correct, delete, or export data but some processing relies on consent or legitimate interests.",
+    "full_summary": "# What You Need to Know\n\n## 🚫 CRITICAL ISSUES (Deal Breakers)\n🚫 You must be 13 or older - kids under 13 get accounts deleted right away  \n🚫 GitHub can read your private repo code for security scans, support, or if they think it's breaking laws  \n🚫 By posting public code, you let everyone copy and use it forever through forks  \n\n## ⚠️ CONCERNING PRACTICES (Think Twice)\n⚠️ They get a permanent license to store, copy, and show your code to run their service  \n⚠️ GitHub staff can access your private repos without asking for security checks or legal reasons  \n⚠️ If you use AI tools like Copilot, your code might train their models unless you opt out  \n⚠️ No refunds if you cancel mid-payment, and they keep backups of your data for 90 days  \n⚠️ They can change terms anytime and suspend your account for any reason  \n\n## ✅ GOOD THINGS (Your Rights)\n✅ You own your code and can delete your account anytime  \n✅ Private repos are treated as confidential and protected like their own secrets  \n✅ You can ask for a copy of your data before they delete it after cancellation  \n✅ You control who sees your private repos and can add licenses to public ones  \n✅ They notify you 30 days before big changes like price hikes  \n\n## ℹ️ STANDARD STUFF (Normal for Most Services)\nℹ️ You need a real email and can't share logins or make bot accounts  \nℹ️ They use cookies and track usage to improve the site  \nℹ️ No phone support - only email and in-app help  \nℹ️ You pay taxes on fees, and late payments add interest  \nℹ️ They can end service if you break rules like spam or illegal stuff",
+    "policy_types": [
+      "privacy",
+      "terms",
+      "cookies",
+      "code_of_conduct"
+    ],
+    "timestamp": "2025-12-21T11:50:16.872439",
+    "created_at": "2025-12-21 11:50:16"
+  }
+}
