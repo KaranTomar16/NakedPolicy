@@ -1,275 +1,208 @@
-🔍 NakedPolicy
-Privacy Policies. Terms. Cookies. Simplified.
+# 🔍 NakedPolicy
+**Privacy Policies. Terms. Cookies. Simplified.**
 
-NakedPolicy is an intelligent browser extension that breaks down complex legal documents — privacy policies, terms & conditions, cookie notices, and codes of conduct — into simple, human-friendly summaries.
+NakedPolicy is an intelligent browser extension that breaks down complex legal documents — **privacy policies, terms & conditions, cookie notices, and codes of conduct** — into simple, human-friendly summaries.
 
-Modern digital platforms bury users under pages of legal jargon. NakedPolicy cuts through the noise and gives you instant clarity, one line at a time.
+Modern digital platforms bury users under pages of legal jargon. **NakedPolicy cuts through the noise** and gives you instant clarity, one line at a time.
 
-Status Python React License
+---
 
-🚨 The Problem It Solves
-Every day, millions of users blindly click "Accept" without understanding what they're agreeing to. Privacy policies and terms are intentionally:
+## 🚨 The Problem It Solves
 
-Long — Often 10,000+ words
-Confusing — Written in dense legal language
-Packed with jargon — Technical and legal terms everywhere
+Every day, millions of users blindly click **"Accept"** without understanding what they’re agreeing to.
+
+Privacy policies and terms are intentionally:
+
+- 📄 **Long** — Often 10,000+ words  
+- ⚖️ **Confusing** — Written in dense legal language  
+- 🧠 **Packed with jargon** — Technical and legal terms everywhere  
+
 Because of this, users rarely know:
 
-❌ What personal data is collected
-❌ How it's used or shared
-❌ How long it's stored
-❌ What rights they actually have
-❌ What cookies and trackers are running in the background
+- ❌ What personal data is collected  
+- ❌ How it's used or shared  
+- ❌ How long it's stored  
+- ❌ What rights they actually have  
+- ❌ What cookies and trackers are running in the background  
 
-This lack of transparency puts people at risk of unwanted tracking, data misuse, and unfair terms.
+This lack of transparency puts people at risk of **unwanted tracking, data misuse, and unfair terms**.
 
-� How NakedPolicy Helps
+---
+
+## 💡 How NakedPolicy Helps
+
 NakedPolicy brings transparency to the digital world with:
 
-✅ One-Line Legal Summaries
-Transforms lengthy, complex documents into short, digestible insights — section by section.
+- ✅ **One-Line Legal Summaries**  
+- 🔍 **Clear data collection & sharing insights**  
+- 🍪 **Simple cookie explanations**  
+- ⚡ **Instant, informed consent decisions**
 
-🔍 Clarity on Data Collection
-Shows exactly what data is being collected, how it's used, and who it's shared with.
+---
 
-🍪 Simple Cookie Explanations
-Explains tracking technologies in plain language — no tech background required.
+## ✨ Core Features
 
-⚡ Instant, Informed Consent
-Helps users make smart privacy decisions before clicking "Accept".
+- 🤖 **Real-time AI Summarization** (Google Gemini)  
+- 📊 **Section-wise Breakdown**  
+- 🍪 **Cookie & Tracker Detection**  
+- 🚨 **Risk Indicators** (high data sharing, profiling, third-party usage)  
+- 🎯 **Dual-Mode Summaries**  
+  - 50-word quick view  
+  - 1000-word detailed analysis  
+- 🌐 **Web Application**  
+- 🔌 **Chrome Extension**  
+- 🎨 **Clean, distraction-free UI**  
+- 🌍 **Cross-Browser Support (planned)**  
 
-✨ Core Features
-🤖 Real-time Policy Summarization using AI (Google Gemini)
-📊 Section-wise Breakdown for easier understanding
-🍪 Cookie and Tracker Detection
-🚨 Risk Indicators (e.g., high data sharing, third-party usage, profiling)
-🎯 Dual-Mode Summaries — 50-word quick view + 1000-word detailed analysis
-🌐 Web Application — Upload and analyze any policy document
-🔌 Chrome Extension — Instant analysis on any website
-🎨 Clean, Distraction-Free UI
-🌍 Cross-Browser Support (Chrome, Firefox, Edge — planned)
-🎯 How It Works
+---
+
+## 🧠 How It Works
+
+```mermaid
 graph TB
     A[User visits website] --> B[Click NakedPolicy extension]
     B --> C[Extension sends URL to backend]
     C --> D[Backend fetches privacy policy]
     D --> E[AI analyzes & summarizes policy]
     E --> F[Generates 50-word summary]
-    E --> G[Generates 1000-word detailed analysis]
-    F --> H[Extension displays quick summary]
-    H --> I[User clicks 'View Full Report']
-    I --> J[Web app shows detailed analysis with risk scores]
-Step-by-Step:
+    E --> G[Generates 1000-word analysis]
+    F --> H[Extension shows quick summary]
+    H --> I[User clicks View Full Report]
+    I --> J[Web app displays full analysis]
+```
 
-Install the NakedPolicy extension
-Visit any website with a privacy policy, terms page, or cookie banner
-NakedPolicy scans and extracts key legal sections
-AI generates one-line summaries and highlights critical points
-Users get an immediate, human-friendly overview
-🚀 Quick Start
-1. Start Backend
+---
+
+## 🚀 Quick Start
+
+### 1️⃣ Start Backend
+```bash
 start-backend.bat
-2. Start Frontend
+```
+
+### 2️⃣ Start Frontend
+```bash
 start-frontend.bat
-3. Use the App
-Web: Visit http://localhost:5173
-Extension: Build with npm run build, load dist/ in Chrome
-🔧 Setup
-Prerequisites
-Python 3.8+
-Node.js 16+
-Chrome browser (for extension)
-Installation
-Clone repository bash git clone https://github.com/Swinalwaghmare/NakedPolicy.git cd NakedPolicy
+```
 
-Backend setup bash pip install -r requirements.txt playwright install chromium
+### 3️⃣ Use the App
+- Web: `http://localhost:5173`
+- Extension: Build and load `dist/` in Chrome
 
-Frontend setup bash cd frontend npm install
+---
 
-Extension setup bash npm install npm run build
+## 🔧 Setup
 
-API Key Setup
+### Prerequisites
+- Python 3.8+
+- Node.js 16+
+- Chrome Browser
 
-Get API key from Google AI Studio
-Update app.py line 16: python api_key = "YOUR_API_KEY_HERE"
-📖 Usage
-Web Application
-Start backend: start-backend.bat
-Start frontend: start-frontend.bat
-Open http://localhost:5173
-Upload a .txt policy file or enter a URL
-View AI-generated summary with risk assessment
-Chrome Extension
-Build: npm run build
-Open chrome://extensions/
-Enable "Developer mode"
-Click "Load unpacked" → Select dist/ folder
-Visit any website → Click NakedPolicy icon
-Click "Analyze Privacy Policy"
-View instant summary or "View Full Report"
-API Endpoints
-# Create demo summary (no API key needed)
-POST /demo-summary
-Content-Type: application/json
-{
-  "url": "github.com"
-}
+### Installation
 
-# Fetch and analyze (requires API key)
-POST /fetch-and-summarize
-Content-Type: application/json
-{
-  "url": "github.com"
-}
+```bash
+git clone https://github.com/Swinalwaghmare/NakedPolicy.git
+cd NakedPolicy
+```
 
-# Get full summary by ID
-GET /summary/<id>
-
-# Health check
-GET /health
-📁 Project Structure
-NakedPolicy/
-├── app.py                    # Flask backend API
-├── policy_fetcher_safe.py    # Policy extraction from websites
-├── summary_store.py          # Summary storage system
-├── requirements.txt          # Python dependencies
-├── summaries_db.json         # Stored summaries database
-│
-├── frontend/                 # React web application
-│   ├── src/
-│   │   ├── App.jsx          # Main app with URL parameter support
-│   │   └── components/      # React components
-│   ├── package.json
-│   └── vite.config.js
-│
-├── src/                      # Chrome extension
-│   ├── App.tsx              # Extension popup
-│   ├── components/          # Extension UI components
-│   └── background.ts        # Background service worker
-│
-├── public/
-│   └── manifest.json        # Extension manifest (Manifest V3)
-│
-├── start-backend.bat        # Windows backend startup script
-└── start-frontend.bat       # Windows frontend startup script
-🛠️ Tech Stack
-Backend: - Python 3.8+ - Flask & Flask-CORS - Google Gemini AI (google-genai) - Playwright (for web scraping)
-
-Frontend: - React 18 - Vite - TailwindCSS - Lucide Icons
-
-Extension: - TypeScript - React - Chrome Extension Manifest V3
-
-Database: - JSON file storage (summaries_db.json) - Planned: MongoDB / PostgreSQL
-
-Deployment: - Planned: Vultr (Coolify)
-
-📝 Example Output
-Input: Privacy policy from github.com
-
-50-word Summary (Extension):
-
-🚫 GitHub collects extensive personal data including browsing history and location.
-⚠️ Data shared with third-party advertisers.
-⚠️ Limited user control over data deletion.
-⚠️ Indefinite data retention period.
-1000-word Summary (Frontend):
-
-🚫 CRITICAL ISSUES
-Data selling to third parties
-Indefinite storage periods
-Extensive tracking across devices
-⚠️ CONCERNING PRACTICES
-Third-party sharing without explicit consent
-Location tracking enabled by default
-Limited opt-out options
-✅ GOOD THINGS
-Uses encryption for data transmission
-Provides data access rights
-GDPR compliant
-ℹ️ STANDARD STUFF
-Age requirements (13+)
-Cookie usage for functionality
-Terms update notifications
-🗺️ Roadmap
-[ ] Multi-Language Support — Analyze policies in Spanish, French, German, etc.
-[ ] Risk Scoring — Automated risk scores (1-10) for policies
-[ ] Machine Learning Tracker Classification — Identify tracking technologies automatically
-[ ] Policy Comparison View — Compare Website A vs. Website B side-by-side
-[ ] Mobile App Version — iOS & Android apps
-[ ] Enterprise API — Developer-grade API for integration
-[ ] Firefox & Edge Extensions — Cross-browser support
-[ ] Dark Mode — User preference support
-[ ] Export Reports — PDF/CSV format
-[ ] Historical Tracking — Monitor policy changes over time
-🎯 Why It Matters
-NakedPolicy empowers people to:
-
-✅ Protect their privacy
-✅ Avoid hidden data traps
-✅ Understand their digital rights
-✅ Make confident consent decisions
-
-Browse the internet in control, not in the dark.
-
-🐛 Troubleshooting
-Backend won't start
-pip install --upgrade google-genai flask flask-cors playwright
+#### Backend
+```bash
+pip install -r requirements.txt
 playwright install chromium
-Frontend won't start
+```
+
+#### Frontend
+```bash
 cd frontend
-rm -rf node_modules package-lock.json
 npm install
-npm run dev
-Extension not working
-Verify backend is running on port 5000
-Check chrome://extensions/ for errors
-Rebuild: npm run build
-Reload extension in Chrome
-API Quota Error
-Use /demo-summary endpoint instead
-Wait 1-2 minutes for quota reset
-Check usage: https://aistudio.google.com/usage
-CORS Issues
-Ensure Flask-CORS is installed
-Check backend logs for CORS errors
-Verify extension has correct API URL
-🤝 Contributing
-Contributions are welcome! If you have ideas, improvements, or feature suggestions:
+```
 
-Fork the repo
-Create a new branch (feature/amazing-feature)
-Commit your changes (git commit -m 'Add amazing feature')
-Push to the branch (git push origin feature/amazing-feature)
-Submit a pull request
-Code Guidelines
-Follow existing code style
-Add comments for complex logic
-Test thoroughly before submitting
-Update README if adding new features
-📄 License
-MIT License — Free to use, modify, and distribute.
+#### Extension
+```bash
+npm install
+npm run build
+```
 
-See LICENSE for more information.
+---
 
-👨‍💻 Contributors
-Karan Tomar (Team Leader)
-Swinal Waghmare (Developer)
-Harshal Pantawane (Developer)
-Anirudh Trivedi (Developer)
-💖 Support the Project
-If NakedPolicy helps you make the internet a safer place, consider:
+## 🔑 API Key Setup
 
-⭐ Starring the repository
-🐛 Reporting bugs and issues
-💡 Suggesting features
-🔀 Contributing code
-📢 Sharing with friends and colleagues
+1. Get API key from **Google AI Studio**
+2. Update `app.py`:
+```python
+api_key = "YOUR_API_KEY_HERE"
+```
 
-📧 Contact
-For questions, feedback, or collaboration:
+---
 
-GitHub Issues: Report a bug
-Email: karantomar3932@gmail.com
-Made with ❤️ and AI by the NakedPolicy Team
+## 📁 Project Structure
 
-Bringing transparency to the digital world, one policy at a time.
+```text
+NakedPolicy/
+├── app.py
+├── policy_fetcher_safe.py
+├── summary_store.py
+├── summaries_db.json
+├── frontend/
+├── src/
+├── public/
+├── start-backend.bat
+└── start-frontend.bat
+```
+
+---
+
+## 🛠️ Tech Stack
+
+**Backend**
+- Python, Flask, Flask-CORS  
+- Google Gemini AI  
+- Playwright  
+
+**Frontend**
+- React 18, Vite  
+- TailwindCSS  
+
+**Extension**
+- TypeScript, React  
+- Manifest V3  
+
+---
+
+## 🗺️ Roadmap
+
+- [ ] Multi-Language Support  
+- [ ] Risk Scoring  
+- [ ] Policy Comparison  
+- [ ] Mobile App  
+- [ ] Enterprise API  
+- [ ] Dark Mode  
+- [ ] Export Reports  
+
+---
+
+## 👨‍💻 Contributors
+
+- **Karan Tomar** — Team Leader  
+- Swinal Waghmare  
+- Harshal Pantawane  
+- Anirudh Trivedi  
+
+---
+
+## 📄 License
+
+**MIT License**
+
+---
+
+## 💖 Support
+
+- ⭐ Star the repo  
+- 🐛 Report issues  
+- 💡 Suggest features  
+- 🔀 Contribute  
+
+---
+
+**Bringing transparency to the digital world — one policy at a time.**
