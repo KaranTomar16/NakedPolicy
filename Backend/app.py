@@ -1,4 +1,4 @@
-import
+import os
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from openai import OpenAI
@@ -10,7 +10,7 @@ load_dotenv()
 app = Flask(__name__)
 CORS(app)  # Enable CORS for Chrome Extension
 
-# Configure Perplexity API (OpenAI-compatible)
+
 api_key = os.environ.get("PERPLEXITY_API_KEY")
 if not api_key:
     # Fallback - user should set their Perplexity API key
