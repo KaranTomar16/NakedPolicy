@@ -23,7 +23,7 @@ Because of this, users rarely know:
 - ❌ How it's used or shared  
 - ❌ How long it's stored  
 - ❌ What rights they actually have  
-- ❌ What cookies and trackers are running in the background  
+- ❌ What cookies and trackers are running in the 
 
 This lack of transparency puts people at risk of **unwanted tracking, data misuse, and unfair terms**.
 
