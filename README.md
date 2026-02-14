@@ -11,7 +11,7 @@ Modern digital platforms bury users under pages of legal jargon. **NakedPolicy c
 
 Every day, millions of users blindly click **"Accept"** without understanding what they’re agreeing to.
 
-Privacy policies and terms are intentionally:
+Privacy policies and terms are intentionally: 
 
 - 📄 **Long** — Often 10,000+ words  
 - ⚖️ **Confusing** — Written in dense legal language  
